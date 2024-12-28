@@ -60,6 +60,12 @@ const WeatherForecast = () => {
         className="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md"
       >
         <div className="relative z-0 mb-6 w-full group">
+          <label
+            htmlFor="latitude"
+            className="absolute text-gray-500 text-sm transition-all duration-200 transform -translate-y-6 scale-75 top-2 left-0 origin-[0] peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:translate-y-[-24px] peer-focus:scale-75 peer-focus:text-teal-600"
+          >
+            Latitude <FaMapMarkerAlt className="inline ml-1" />
+          </label>
           <input
             type="number"
             id="latitude"
@@ -69,15 +75,15 @@ const WeatherForecast = () => {
             onChange={(e) => setLatitude(e.target.value)}
             required
           />
-          <label
-            htmlFor="latitude"
-            className="absolute text-gray-500 text-sm transition-all duration-200 transform -translate-y-6 scale-75 top-2 left-0 origin-[0] peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:translate-y-[-24px] peer-focus:scale-75 peer-focus:text-teal-600"
-          >
-            Latitude <FaMapMarkerAlt className="inline ml-1" />
-          </label>
         </div>
 
         <div className="relative z-0 mb-6 w-full group">
+          <label
+            htmlFor="longitude"
+            className="absolute text-gray-500 text-sm transition-all duration-200 transform -translate-y-6 scale-75 top-2 left-0 origin-[0] peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:translate-y-[-24px] peer-focus:scale-75 peer-focus:text-teal-600"
+          >
+            Longitude <FaMapMarkerAlt className="inline ml-1" />
+          </label>
           <input
             type="number"
             id="longitude"
@@ -87,12 +93,6 @@ const WeatherForecast = () => {
             onChange={(e) => setLongitude(e.target.value)}
             required
           />
-          <label
-            htmlFor="longitude"
-            className="absolute text-gray-500 text-sm transition-all duration-200 transform -translate-y-6 scale-75 top-2 left-0 origin-[0] peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:translate-y-[-24px] peer-focus:scale-75 peer-focus:text-teal-600"
-          >
-            Longitude <FaMapMarkerAlt className="inline ml-1" />
-          </label>
         </div>
 
         <div className="relative z-0 mb-6 w-full group">
